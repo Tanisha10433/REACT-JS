@@ -1,15 +1,16 @@
 import React from 'react';
-import Course from './components/Course';
-
 import Home from './components/Home';
-function App(){
-  
-  return(
+import Course from './components/Course';
+import Signup from './components/Signup';
+
+function App() {
+  return (
     <div>
-      
-      
+      <Home />
       <Course />
+      <Signup />
     </div>
   )
 }
+
 export default App;

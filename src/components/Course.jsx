@@ -8,7 +8,7 @@ function Course(){
     return(
         <>
             <FreeCourse />
-            <div>Course</div>
+            <div>Tanisha</div>
         </>
     )
 }
