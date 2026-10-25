@@ -1,42 +1,30 @@
-function FreeCourse({ course }) {
-    return (
+import { useState } from 'react'
+
+function FreeCourse({freeCourse}){
+    return(
         <>
-            <h2>Free Course</h2>
-            {course.map((item) => (
-                <div key={item.id}>
-                    <h3>{item.name}</h3>
-                    <p>{item.course.join(", ")}</p>
-                </div>
-            ))}
+        <h1>Free Course</h1>
+        <p>{freeCourse}</p>
         </>
-    );
+    )
 }
-
-function PaidCourse({ course }) {
-    return (
+function PaidCourse({paidCourse}){
+    return(
         <>
-            <h2>Paid Course</h2>
-            {course.map((item) => (
-                <div key={item.id}>
-                    <h3>{item.name}</h3>
-                    <p>{item.course.join(", ")}</p>
-                </div>
-            ))}
+        <h1>Paid Course</h1>
+        <p>{paidCourse}</p>
         </>
-    );
+    )
 }
-
-function Course() {
-   
-
-    const freeCourses = [
-      
-    return (
+function Course(){
+    const[freeCourse]=useState("Html,Css,Js")
+    const[paidCourse]=useState("React,Node,Express,MongoDB")
+    return(
         <>
-            <FreeCourse course={freeCourses} />
-            <PaidCourse course={paidCourses} />
+        <PaidCourse paidCourse={paidCourse}/>
+        <FreeCourse freeCourse={freeCourse}/>
         </>
-    );
+    )
 }
 
 export default Course
