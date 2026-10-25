@@ -27,32 +27,10 @@ function PaidCourse({ course }) {
 }
 
 function Course() {
-    const paidCourses = [
-        {
-            id: 1,
-            course: ["html", "css", "javascript"],
-            name: "akhil"
-        },
-        {
-            id: 2,
-            course: ["html", "css", "javascript"],
-            name: "ankush"
-        }
-    ];
+   
 
     const freeCourses = [
-        {
-            id: 1,
-            course: ["html", "css", "javascript"],
-            name: "akhil"
-        },
-        {
-            id: 2,
-            course: ["react", "angular", "typescript"],
-            name: "ankush"
-        }
-    ];
-
+      
     return (
         <>
             <FreeCourse course={freeCourses} />
