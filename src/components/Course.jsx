@@ -1,28 +1,28 @@
 import { useState } from 'react'
 
-function FreeCourse({freeCourse}){
+function FreeCourse({course}){
     return(
         <>
         <h1>Free Course</h1>
-        <p>{freeCourse}</p>
+        <p>{course}</p>
         </>
     )
 }
-function PaidCourse({paidCourse}){
+function PaidCourse({course}){
     return(
         <>
         <h1>Paid Course</h1>
-        <p>{paidCourse}</p>
+        <p>{course}</p>
         </>
     )
 }
 function Course(){
-    const[freeCourse]=useState("Html,Css,Js")
-    const[paidCourse]=useState("React,Node,Express,MongoDB")
+   const [course]=useState("Web Development")
     return(
         <>
-        <PaidCourse paidCourse={paidCourse}/>
-        <FreeCourse freeCourse={freeCourse}/>
+        < paidCourse course={course}/>
+        <div> Course!</div>
+        <FreeCourse course={course}/>
         </>
     )
 }
